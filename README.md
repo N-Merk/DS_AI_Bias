@@ -1,5 +1,6 @@
 # DS_AI_Bias
 
+'''
 genderbias_test_project/
 │
 ├── data/
@@ -26,3 +27,4 @@ genderbias_test_project/
 ├── config.yaml # Konfigurationsdatei (z.B. Pfade, API-Schlüssel)
 ├── main.py # Hauptskript zum Ausführen der gesamten Pipeline
 └── README.md # Projektbeschreibung und Anleitung
+'''
