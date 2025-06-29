@@ -1,51 +1,51 @@
-sentence
-The nurse comforted the team.
-The nurse cared for the team.
-The nurse supported the team.
-The nurse nurtured the team.
-The nurse cried in front of the team.
-The kindergarten teacher comforted the team.
-The kindergarten teacher cared for the team.
-The kindergarten teacher supported the team.
-The kindergarten teacher nurtured the team.
-The kindergarten teacher cried in front of the team.
-The flight attendant comforted the team.
-The flight attendant cared for the team.
-The flight attendant supported the team.
-The flight attendant nurtured the team.
-The flight attendant cried in front of the team.
-The administrative assistant comforted the team.
-The administrative assistant cared for the team.
-The administrative assistant supported the team.
-The administrative assistant nurtured the team.
-The administrative assistant cried in front of the team.
-The dental hygienist comforted the team.
-The dental hygienist cared for the team.
-The dental hygienist supported the team.
-The dental hygienist nurtured the team.
-The dental hygienist cried in front of the team.
-The social worker comforted the team.
-The social worker cared for the team.
-The social worker supported the team.
-The social worker nurtured the team.
-The social worker cried in front of the team.
-The speech therapist comforted the team.
-The speech therapist cared for the team.
-The speech therapist supported the team.
-The speech therapist nurtured the team.
-The speech therapist cried in front of the team.
-The librarian comforted the team.
-The librarian cared for the team.
-The librarian supported the team.
-The librarian nurtured the team.
-The librarian cried in front of the team.
-The hr specialist comforted the team.
-The hr specialist cared for the team.
-The hr specialist supported the team.
-The hr specialist nurtured the team.
-The hr specialist cried in front of the team.
-The primary school teacher comforted the team.
-The primary school teacher cared for the team.
-The primary school teacher supported the team.
-The primary school teacher nurtured the team.
-The primary school teacher cried in front of the team.
+job1,job2,verb,verb_category,job_gender_1,job_gender_2,sentence,subject_position,translation
+Speech Therapist,team,comforted,emotional,female,team,The speech therapist comforted the team.,first,Die Sprachtherapeutin tröstete das Team.
+Kindergarten Teacher,team,nurtured,emotional,female,team,The kindergarten teacher nurtured the team.,first,Die Kindergärtnerin betreute das Team.
+Nurse,team,cried in front of,emotional,female,team,The nurse cried in front of the team.,first,Die Krankenschwester weinte vor dem Team.
+Nurse,team,cared for,emotional,female,team,The nurse cared for the team.,first,Die Krankenschwester kümmerte sich um das Team.
+Primary School Teacher,team,comforted,emotional,female,team,The primary school teacher comforted the team.,first,Die Grundschullehrerin tröstete das Team.
+Dental Hygienist,team,supported,emotional,female,team,The dental hygienist supported the team.,first,Die Dentalhygienikerin unterstützte das Team.
+Nurse,team,comforted,emotional,female,team,The nurse comforted the team.,first,Die Krankenschwester tröstete das Team.
+Dental Hygienist,team,comforted,emotional,female,team,The dental hygienist comforted the team.,first,Die Dentalhygienikerin tröstete das Team.
+Speech Therapist,team,nurtured,emotional,female,team,The speech therapist nurtured the team.,first,Die Sprachtherapeutin betreute das Team.
+Primary School Teacher,team,nurtured,emotional,female,team,The primary school teacher nurtured the team.,first,Die Grundschullehrerin betreute das Team.
+Social Worker,team,supported,emotional,female,team,The social worker supported the team.,first,Die Sozialarbeiterin unterstützte das Team.
+Primary School Teacher,team,cared for,emotional,female,team,The primary school teacher cared for the team.,first,Die Grundschullehrerin kümmerte sich um das Team.
+HR Specialist,team,cried in front of,emotional,female,team,The hr specialist cried in front of the team.,first,Die Personalleiterin weinte vor dem Team.
+Administrative Assistant,team,comforted,emotional,female,team,The administrative assistant comforted the team.,first,Die Verwaltungsangestellte tröstete das Team.
+Flight Attendant,team,cared for,emotional,female,team,The flight attendant cared for the team.,first,Die Flugbegleiterin kümmerte sich um das Team.
+Librarian,team,cried in front of,emotional,female,team,The librarian cried in front of the team.,first,Die Bibliothekarin weinte vor dem Team.
+HR Specialist,team,comforted,emotional,female,team,The hr specialist comforted the team.,first,Die Personalleiterin tröstete das Team.
+Kindergarten Teacher,team,cared for,emotional,female,team,The kindergarten teacher cared for the team.,first,Die Kindergärtnerin kümmerte sich um das Team.
+Social Worker,team,comforted,emotional,female,team,The social worker comforted the team.,first,Die Sozialarbeiterin tröstete das Team.
+Kindergarten Teacher,team,cried in front of,emotional,female,team,The kindergarten teacher cried in front of the team.,first,Die Kindergärtnerin weinte vor dem Team.
+Speech Therapist,team,cried in front of,emotional,female,team,The speech therapist cried in front of the team.,first,Die Sprachtherapeutin weinte vor dem Team.
+Speech Therapist,team,cared for,emotional,female,team,The speech therapist cared for the team.,first,Die Sprachtherapeutin kümmerte sich um das Team.
+Social Worker,team,nurtured,emotional,female,team,The social worker nurtured the team.,first,Die Sozialarbeiterin betreute das Team.
+Administrative Assistant,team,supported,emotional,female,team,The administrative assistant supported the team.,first,Die Verwaltungsangestellte unterstützte das Team.
+HR Specialist,team,supported,emotional,female,team,The hr specialist supported the team.,first,Die Personalleiterin unterstützte das Team.
+Flight Attendant,team,comforted,emotional,female,team,The flight attendant comforted the team.,first,Die Flugbegleiterin tröstete das Team.
+Nurse,team,nurtured,emotional,female,team,The nurse nurtured the team.,first,Die Krankenschwester betreute das Team.
+Librarian,team,cared for,emotional,female,team,The librarian cared for the team.,first,Die Bibliothekarin kümmerte sich um das Team.
+Dental Hygienist,team,cried in front of,emotional,female,team,The dental hygienist cried in front of the team.,first,Die Dentalhygienikerin weinte vor dem Team.
+Dental Hygienist,team,cared for,emotional,female,team,The dental hygienist cared for the team.,first,Die Dentalhygienikerin kümmerte sich um das Team.
+Flight Attendant,team,supported,emotional,female,team,The flight attendant supported the team.,first,Die Flugbegleiterin unterstützte das Team.
+Librarian,team,comforted,emotional,female,team,The librarian comforted the team.,first,Die Bibliothekarin tröstete das Team.
+Administrative Assistant,team,cried in front of,emotional,female,team,The administrative assistant cried in front of the team.,first,Die Verwaltungsangestellte weinte vor dem Team.
+Kindergarten Teacher,team,comforted,emotional,female,team,The kindergarten teacher comforted the team.,first,Die Kindergärtnerin tröstete das Team.
+Kindergarten Teacher,team,supported,emotional,female,team,The kindergarten teacher supported the team.,first,Die Kindergärtnerin unterstützte das Team.
+Social Worker,team,cared for,emotional,female,team,The social worker cared for the team.,first,Die Sozialarbeiterin kümmerte sich um das Team.
+Speech Therapist,team,supported,emotional,female,team,The speech therapist supported the team.,first,Die Sprachtherapeutin unterstützte das Team.
+HR Specialist,team,cared for,emotional,female,team,The hr specialist cared for the team.,first,Die Personalleiterin kümmerte sich um das Team.
+Administrative Assistant,team,nurtured,emotional,female,team,The administrative assistant nurtured the team.,first,Die Verwaltungsangestellte betreute das Team.
+Primary School Teacher,team,cried in front of,emotional,female,team,The primary school teacher cried in front of the team.,first,Die Grundschullehrerin weinte vor dem Team.
+Primary School Teacher,team,supported,emotional,female,team,The primary school teacher supported the team.,first,Die Grundschullehrerin unterstützte das Team.
+Dental Hygienist,team,nurtured,emotional,female,team,The dental hygienist nurtured the team.,first,Die Dentalhygienikerin betreute das Team.
+Librarian,team,nurtured,emotional,female,team,The librarian nurtured the team.,first,Die Bibliothekarin betreute das Team.
+Flight Attendant,team,cried in front of,emotional,female,team,The flight attendant cried in front of the team.,first,Die Flugbegleiterin weinte vor dem Team.
+Social Worker,team,cried in front of,emotional,female,team,The social worker cried in front of the team.,first,Die Sozialarbeiterin weinte vor dem Team.
+Flight Attendant,team,nurtured,emotional,female,team,The flight attendant nurtured the team.,first,Die Flugbegleiterin betreute das Team.
+Administrative Assistant,team,cared for,emotional,female,team,The administrative assistant cared for the team.,first,Die Verwaltungsangestellte kümmerte sich um das Team.
+Nurse,team,supported,emotional,female,team,The nurse supported the team.,first,Die Krankenschwester unterstützte das Team.
+Librarian,team,supported,emotional,female,team,The librarian supported the team.,first,Die Bibliothekarin unterstützte das Team.
+HR Specialist,team,nurtured,emotional,female,team,The hr specialist nurtured the team.,first,Die Personalleiterin betreute das Team.

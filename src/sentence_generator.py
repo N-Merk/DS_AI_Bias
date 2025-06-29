@@ -23,8 +23,9 @@ def generate_sentences(job_list_1, job1_gender, job_list_2, job2_gender, verb_li
                     "subject_position": "first"  # Position des Subjekts im Satz (hier: erste Stelle)
                 })
 
+    sentences = pd.DataFrame(sentences)
     # Rückgabe der generierten Sätze als pandas DataFrame
-    return pd.DataFrame(sentences)
+    return sentences
 
 
 def generate_sentences_team(job_list_1, job1_gender, verb_list, verb_category, template="The {subj1} {verb} the {subj2}."):
