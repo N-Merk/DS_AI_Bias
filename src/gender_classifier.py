@@ -43,8 +43,6 @@ def determine_gender_from_ending(word):
     # Männliche Endungen
     male_endings = ["er", "eur", "iker", "or", "ist", "ent", "ingenieur", "arbeiter", "spezialisten", "chef",
                     "polizisten", "bibliothekar", "logopäden", "referenten"]
-    # Neutrale Endungen (selten)
-    neutral_endings = ["chen", "lein", "um"]
 
     for ending in female_endings:
         if word.endswith(ending):
@@ -53,10 +51,6 @@ def determine_gender_from_ending(word):
     for ending in male_endings:
         if word.endswith(ending):
             return "male"
-
-    for ending in neutral_endings:
-        if word.endswith(ending):
-            return "neutral"
 
     return "unknown"
 
@@ -82,7 +76,8 @@ def get_gender_Spezialfall(article, noun):
     female_combinations = {
         ("die", "verwaltungsangestellte"),
         ("der", "verwaltungsangestellten"),
-        ("die", "zahnmedizinische")
+        ("die", "zahnmedizinische"),
+        ("der", "zahnmedizinischen")
     }
 
     male_combinations = {
