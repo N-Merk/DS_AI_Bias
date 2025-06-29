@@ -60,7 +60,7 @@ def process_text_with_gemini(text, api_key, prompt_instruction):
         return None
 
 
-def join_sentences(df, col_name, separator=" "):
+def join_sentences(df, col_name, separator="-"):
     """
     Verbindet alle Sätze einer Spalte eines DataFrames zu einem einzigen Text.
 
@@ -77,7 +77,7 @@ def join_sentences(df, col_name, separator=" "):
     return separator.join(sentences)
 
 
-def process_translation_batch(df_batch, api_token, prompt, separator="-"):
+def process_translation_batch(df_batch, col_name, api_token, prompt, separator="-"):
     """
     Übersetzt eine Teilmenge eines DataFrames mit Sätzen über die Gemini API.
 
@@ -99,7 +99,7 @@ def process_translation_batch(df_batch, api_token, prompt, separator="-"):
     Raises:
         Exception: Wenn der API-Aufruf fehlschlägt oder ein anderer Fehler auftritt.
     """
-    text = join_sentences(df_batch, "sentence", separator)
+    text = join_sentences(df_batch, col_name, separator)
     translated_text = process_text_with_gemini(text, api_token, prompt)
     return translated_text
 

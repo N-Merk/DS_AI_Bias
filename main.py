@@ -1,7 +1,4 @@
-'''from src.data_loader import load_excel_data
-from src.sentence_generator import generate_sentences
-from src.translator import translate_sentences
-from src.evaluator import evaluate_bias'''
+
 from data.raw.professions import df_female, df_male
 from data.raw.verbs import caring_df, neutral_df, dominant_df
 from src.sentence_generator import generate_sentences, generate_sentences_team
@@ -15,7 +12,8 @@ import os
 
 
 def main():
-
+    # personal.env laden — Pfad ggf. anpassen
+    load_dotenv("personal.env")
     API_Token = os.getenv("GEMINI_API_KEY")
     print("Geladener API-Key:", API_Token)
 
@@ -24,7 +22,7 @@ def main():
 
     # Wähle Parameter
     batch_size = 300
-    separator = "-"
+    separator = "|||"
     translated_batches = []
 
     # 🧠 PROMPT definieren – beachte: keine zusätzliche Formatierung!
