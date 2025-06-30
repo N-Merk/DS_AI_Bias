@@ -39,9 +39,9 @@ def determine_gender_from_ending(word):
         return "team"
 
     # Weibliche Endungen
-    female_endings = ["in", "erin", "schwester"]
+    female_endings = ["in", "erin", "schwester", "frau"]
     # Männliche Endungen
-    male_endings = ["er", "eur", "iker", "or", "ist", "ent", "ingenieur", "arbeiter", "spezialisten", "chef",
+    male_endings = ["er", "eur", "iker", "or", "ist", "ent", "ingenieur", "mann", "arbeiter", "spezialisten", "chef",
                     "polizisten", "bibliothekar", "logopäden", "referenten"]
 
     for ending in female_endings:
@@ -82,7 +82,13 @@ def get_gender_Spezialfall(article, noun):
 
     male_combinations = {
         ("den", "verwaltungsangestellten"),
-        ("dem", "verwaltungsangestellten")
+        ("dem", "verwaltungsangestellten"),
+        ("den", "verwaltungsassistenten"),
+        ("dem", "verwaltungsassistenten"),
+        ("dem", "verwaltungsangestellten"),
+        ("dem", "verwaltungsangestellten"),
+        ("den", "sprachtherapeuten"),
+        ("dem", "sprachtherapeuten"),
     }
 
     if (article.lower(), noun.lower()) in female_combinations:
