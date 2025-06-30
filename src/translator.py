@@ -23,13 +23,8 @@ def process_text_with_gemini(text, api_key, prompt_instruction):
 
     genai.configure(api_key=api_key)
 
-    # Für die größtmöglichen Free Tokens und eine gute Balance zwischen Geschwindigkeit und Leistung
-    # empfehlen wir "gemini-1.5-flash" oder "gemini-1.5-pro".
-    # "gemini-1.5-flash" hat in der Regel die höchsten Ratenlimits im Free Tier.
-    # Google benennt Modelle manchmal um oder führt neue Versionen ein,
-    # daher ist es gut, die offizielle Dokumentation zu prüfen,
-    # aber zum Zeitpunkt 2025-06 ist Flash die gängige Empfehlung für Free Tier.
-    model_name = 'gemini-1.5-flash'  # Dies ist die Version mit einem sehr großzügigen Free Tier.
+
+    model_name = 'gemini-2.0-flash'
 
     model = genai.GenerativeModel(model_name)
 

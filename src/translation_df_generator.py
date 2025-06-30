@@ -25,8 +25,8 @@ def generate_df_with_translation(df, new_col_name, prompt, API_Token):
         translated_batches.append(batch)
 
         # 5. Wartezeit zur Einhaltung des API-Limits
-        print(f"Batch {i // batch_size + 1} übersetzt. Warte 60 Sekunden...")
-        time.sleep(60)
+        print(f"Batch {i // batch_size + 1} übersetzt. Warte 20 Sekunden...")
+        time.sleep(20)
 
     # 🔁 6. Alle Batches zusammenfügen
     translated_df = pd.concat(translated_batches, ignore_index=True)

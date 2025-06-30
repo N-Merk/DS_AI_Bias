@@ -1,5 +1,5 @@
 import pandas as pd
-
+import numpy as np
 
 def add_translations_to_df(df, translated_text, separator, new_columnname="translation"):
     """
@@ -32,10 +32,19 @@ def add_translations_to_df(df, translated_text, separator, new_columnname="trans
     # Optional: Trim spaces bei jedem Element
     splitted_translations = [t.strip() for t in splitted_translations if t.strip() != ""]
 
+    print(f"Textlänge Sätze: {len(df)}, Anzahl Separatoren: {translated_text.count(separator)}")
+
     # Prüfe, ob die Anzahl der Sätze übereinstimmt
     if len(splitted_translations) != len(df):
-        raise ValueError(
-            f"Anzahl übersetzter Sätze ({len(splitted_translations)}) stimmt nicht mit DataFrame-Länge ({len(df)}) überein.")
+        # Optional: auffüllen
+        if len(splitted_translations) < len(df):
+            print("Warnung: Nicht alle Sätze wurden erfolgreich übersetzt. Fülle unübersetzte mit NaN.")
+            # Fülle mit NaNs auf
+            splitted_translations += [np.nan] * (len(df) - len(splitted_translations))
+        elif len(splitted_translations) > len(df):
+            print("Warnung: Nicht alle Sätze wurden erfolgreich übersetzt. Schneide überschüssige ab.")
+            # Schneide Überschuss ab (sollte eigentlich nie passieren)
+            splitted_translations = splitted_translations[:len(df)]
 
     # Neue Spalte hinzufügen
     df[new_columnname] = splitted_translations
