@@ -89,6 +89,8 @@ def get_gender_Spezialfall(article, noun):
         ("dem", "verwaltungsangestellten"),
         ("den", "sprachtherapeuten"),
         ("dem", "sprachtherapeuten"),
+        ("den", "personalexperten"),
+        ("dem", "personalexperten"),
     }
 
     if (article.lower(), noun.lower()) in female_combinations:
