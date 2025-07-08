@@ -51,7 +51,7 @@ def plot_gender_distribution_comparison(datasets: dict, df_real, dateipfad_add):
         "Civil Engineer"
     ]
 
-    #jobs = sorted(df_plot["job"].unique())
+
     x = np.arange(len(jobs))
 
     genders = ["female", "male"]
