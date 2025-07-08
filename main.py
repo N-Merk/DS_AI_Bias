@@ -51,5 +51,5 @@ def main():
     translated_df = pd.concat(translated_batches, ignore_index=True)
 
     # 💾 7. Optional: Speichern
-    translated_df.to_csv("uebersetzte_saetze.csv", index=False)
+    #translated_df.to_csv("uebersetzte_saetze.csv", index=False)
 main()

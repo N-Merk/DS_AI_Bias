@@ -69,6 +69,10 @@ def plot_gender_distribution_comparison(datasets: dict, df_real, dateipfad_add):
         ("feminist", "male"): "#80b1d3",
         ("incel", "female"): "#f781bf",
         ("incel", "male"): "#4daf4a",
+        ("female", "female"): "#fbb4ae",
+        ("female", "male"): "#b3cde3",
+        ("male", "female"): "#decbe4",
+        ("male", "male"): "#ccebc5",
     }
 
     # Plot der Balken

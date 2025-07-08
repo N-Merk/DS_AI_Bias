@@ -42,7 +42,7 @@ def determine_gender_from_ending(word):
     female_endings = ["in", "erin", "schwester", "frau"]
     # Männliche Endungen
     male_endings = ["er", "eur", "iker", "or", "ist", "ent", "ingenieur", "mann", "arbeiter", "spezialisten", "chef",
-                    "polizisten", "bibliothekar", "logopäden", "referenten"]
+                    "polizisten", "bibliothekar", "logopäde", "referenten", "angestellte", "experte", "therapeut"]
 
     for ending in female_endings:
         if word.endswith(ending):
@@ -87,6 +87,8 @@ def get_gender_Spezialfall(article, noun):
         ("dem", "verwaltungsassistenten"),
         ("dem", "verwaltungsangestellten"),
         ("dem", "verwaltungsangestellten"),
+        ("den", "logopäden"),
+        ("dem", "logopäden"),
         ("den", "sprachtherapeuten"),
         ("dem", "sprachtherapeuten"),
         ("den", "personalexperten"),
@@ -122,11 +124,12 @@ def extract_genders_from_translation(csv_path: str, translation_col: str):
     for article1, job1_word in zip(df['article1'], df['job1_word']):
         gender_end = determine_gender_from_ending(job1_word)
         gender_art = determine_gender_from_article(article1)
+        special_gender = get_gender_Spezialfall(article1, job1_word)
 
         if gender_end != "unknown":
             gender_job1.append(gender_end)
-        elif gender_art != "unknown":
-            gender_job1.append(gender_art)
+        elif special_gender != "unknown":
+            gender_job1.append(special_gender)
         else:
             gender_job1.append(gender_art)
             print(f"Unbekanntes Gender für Job1: Artikel='{article1}', Wort='{job1_word}'")
