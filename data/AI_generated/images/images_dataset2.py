@@ -27,3 +27,4 @@ df_image2 = pd.DataFrame(data, columns=["job", "number_person", "number_female"]
 df_image2["number_male"] = df_image2["number_person"] - df_image2["number_female"]
 df_image2["percent_female"] = df_image2["number_female"]/df_image2["number_person"] *100
 df_image2["percent_male"] = df_image2["number_male"]/df_image2["number_person"]*100
+df_image2["source"] = 2
