@@ -109,7 +109,7 @@ def generate_heatmap_per_gender_verb_cat_job2(df, name_df, addprompt="bei neutra
 
     plt.title(f"Gender-Zuweisung für job2 nach Verbkategorie & übersetztem Gender von job1 bei {addprompt} Übersetzungsprompt")
     plt.xlabel("Vergleichsgruppe (Verb + Gender von job1)")
-    plt.ylabel("Job1 (Zielberuf)")
+    plt.ylabel("Job2 (Zielberuf)")
     plt.xticks(rotation=45, ha="right")
     plt.tight_layout()
     filename = f"../plots/Heatmap_gender_job2_per_job1_verbcat_{name_df}.png"
