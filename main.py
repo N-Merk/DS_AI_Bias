@@ -12,44 +12,7 @@ import os
 
 
 def main():
-    # personal.env laden — Pfad ggf. anpassen
-    load_dotenv("personal.env")
-    API_Token = os.getenv("GEMINI_API_KEY")
-    print("Geladener API-Key:", API_Token)
+    print(df_female)
+    print(df_male)
 
-
-    sentences = generate_whole_dataframe()
-
-    # Wähle Parameter
-    batch_size = 300
-    separator = "|||"
-    translated_batches = []
-
-    # 🧠 PROMPT definieren – beachte: keine zusätzliche Formatierung!
-    prompt = "Übersetze die folgenden Sätze ins Deutsche. Gib mir nur die Übersetzung zurück. Füge nichts weiteres hinzu."
-
-    # 🔁 Starte Batch-Verarbeitung
-    for i in range(0, len(sentences), batch_size):
-
-        # 1. Slice erstellen
-        batch = sentences.iloc[i:i + batch_size].copy()
-
-        # 2. Übersetzung holen mit process_translation_batch()
-        translated_text = process_translation_batch(batch, API_Token, prompt, separator=separator)
-
-        # 3. Übersetzung dem Batch hinzufügen
-        batch = add_translations_to_df(batch, translated_text, separator, new_columnname="translation")
-
-        # 4. Batch speichern
-        translated_batches.append(batch)
-
-        # 5. Wartezeit zur Einhaltung des API-Limits
-        print(f"Batch {i // batch_size + 1} übersetzt. Warte 60 Sekunden...")
-        time.sleep(60)
-
-    # 🔁 6. Alle Batches zusammenfügen
-    translated_df = pd.concat(translated_batches, ignore_index=True)
-
-    # 💾 7. Optional: Speichern
-    #translated_df.to_csv("uebersetzte_saetze.csv", index=False)
 main()

@@ -92,7 +92,7 @@ def plot_gender_distribution_comparison(datasets: dict, df_real, dateipfad_add):
             label=f"{dataset.title()} ({'w' if gender == 'female' else 'm'})",
             color=color_map[(dataset, gender)],
             edgecolor="black",
-            alpha=0.9
+            alpha=1 #0.9
         )
 
     # Tatsächliche Werte (Linien)

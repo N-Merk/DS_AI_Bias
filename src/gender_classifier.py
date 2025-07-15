@@ -75,9 +75,7 @@ def determine_gender_from_article(article: str) -> str:
 def get_gender_Spezialfall(article, noun):
     female_combinations = {
         ("die", "verwaltungsangestellte"),
-        ("der", "verwaltungsangestellten"),
-        ("die", "zahnmedizinische"),
-        ("der", "zahnmedizinischen")
+        ("der", "verwaltungsangestellten")
     }
 
     male_combinations = {
@@ -92,7 +90,7 @@ def get_gender_Spezialfall(article, noun):
         ("den", "sprachtherapeuten"),
         ("dem", "sprachtherapeuten"),
         ("den", "personalexperten"),
-        ("dem", "personalexperten"),
+        ("dem", "personalexperten")
     }
 
     if (article.lower(), noun.lower()) in female_combinations:
