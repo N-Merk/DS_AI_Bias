@@ -7,3 +7,5 @@ Alle Datensätze sind unter /data zu finden. Unter AI_generated finden sich alle
 Im Ordner /notebooks sind alle Aufbereitungen und Datengenerierungen sowie statistischen Auswertungen in Jupyter Notebooks zu finden. 
 
 In /src sind in den notebooks genutzte Funktionen gespeichert, während in /plots alle Grafiken abgelegt sind. 
+
+Um den gesamten Code inklusive der Übersetzungen via der Gemini-API auszuführen ist eine personal.env Datei im Hauptordner zu erstellen in welcher der Gemini API Key zu speichern ist indem mit "GEMINI_API_KEY = <Personal Gemini API-KEY>". 
